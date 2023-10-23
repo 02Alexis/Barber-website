@@ -37,8 +37,8 @@ const HeroSection = () => {
                     text-transparent 
                     bg-clip-text 
                     bg-gradient-to-r 
-                    from-green-400 
-                    to-yellow-600
+                    from-purple-400 
+                    to-blue-600
                 "
             >
               Barber{" "}
@@ -47,7 +47,7 @@ const HeroSection = () => {
             <TypeAnimation
               sequence={[
                 // Same substring at the start will only be typed out once, initially
-                "Juan Muñoz",
+                "Name",
                 1000, // wait 1s before replacing "Mice" with "Hamsters"
                 "Website",
                 1000,
@@ -75,9 +75,9 @@ const HeroSection = () => {
                     rounded-full 
                     mr-4 
                     bg-gradient-to-br 
-                    from-green-500 
-                    via-purple-500 
-                    to-red-500 
+                    from-purple-500 
+                    via-blue-500 
+                    to-black-500 
                     hover:bg-slate-200 
                     text-white
                 "
