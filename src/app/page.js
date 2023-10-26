@@ -3,6 +3,8 @@ import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import AboutSection from "./components/AboutSection";
 import ProjectsSection from "./components/ProjectsSection";
+import Footer from "./components/Footer";
+import ArchievementsSection from "./components/ArchievementsSection";
 
 export default function Home() {
   return (
@@ -18,9 +20,11 @@ export default function Home() {
         "
       >
         <HeroSection />
+        <ArchievementsSection />
         <AboutSection />
         <ProjectsSection />
       </div>
+      <Footer />
     </main>
   );
 }

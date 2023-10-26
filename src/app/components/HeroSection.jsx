@@ -6,7 +6,7 @@ import { TypeAnimation } from "react-type-animation";
 
 const HeroSection = () => {
   return (
-    <section>
+    <section className="lg:py-16">
       <div
         className="
             grid 
@@ -16,10 +16,11 @@ const HeroSection = () => {
       >
         <div
           className="
-                col-span-7 
+                col-span-8
                 place-self-center 
                 text-center 
                 sm:text-left
+                justify-self-start
             "
         >
           <h1
@@ -28,7 +29,8 @@ const HeroSection = () => {
                 mb-4 
                 text-4xl 
                 sm:text-5xl 
-                lg:text-6xl 
+                lg:text-8xl
+                lg:leading-normal
                 font-extrabold
             "
           >
@@ -86,7 +88,7 @@ const HeroSection = () => {
             </button>
           </div>
         </div>
-        <div className="col-span-5 place-self-center mt-4 lg:mt-0">
+        <div className="col-span-4 place-self-center mt-4 lg:mt-0">
           <div
             className="
                 rounded-full 
