@@ -3,35 +3,40 @@
 import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
+import { motion } from "framer-motion";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
     <section className="lg:py-16">
       <div
         className="
-            grid 
-            grid-cols-1 
-            sm:grid-cols-12
+          grid 
+          grid-cols-1 
+          sm:grid-cols-12
         "
       >
-        <div
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
           className="
-                col-span-8
-                place-self-center 
-                text-center 
-                sm:text-left
-                justify-self-start
+              col-span-8
+              place-self-center 
+              text-center 
+              sm:text-left
+              justify-self-start
             "
         >
           <h1
             className="
-                text-white 
-                mb-4 
-                text-4xl 
-                sm:text-5xl 
-                lg:text-8xl
-                lg:leading-normal
-                font-extrabold
+              text-white 
+              mb-4 
+              text-4xl 
+              sm:text-5xl 
+              lg:text-8xl
+              lg:leading-normal
+              font-extrabold
             "
           >
             <span
@@ -68,27 +73,33 @@ const HeroSection = () => {
             voluptable
           </p>
           <div>
-            <button
+            <Link
+              href="https://api.whatsapp.com/send?phone=3135897451&text=Motileme"
               className="
-                    px-6 
-                    py-3 
-                    w-full 
-                    sm:w-fit 
-                    rounded-full 
-                    mr-4 
-                    bg-gradient-to-br 
-                    from-purple-500 
-                    via-blue-500 
-                    to-black-500 
-                    hover:bg-slate-200 
-                    text-white
-                "
+                px-6 
+                py-3 
+                w-full 
+                sm:w-fit 
+                rounded-full 
+                mr-4 
+                bg-gradient-to-br 
+                from-purple-500 
+                via-blue-500 
+                to-black-500 
+                hover:bg-slate-200 
+                text-white
+              "
             >
               Hire me
-            </button>
+            </Link>
           </div>
-        </div>
-        <div className="col-span-4 place-self-center mt-4 lg:mt-0">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+          className="col-span-4 place-self-center mt-4 lg:mt-0"
+        >
           <div
             className="
                 rounded-full 
@@ -114,7 +125,7 @@ const HeroSection = () => {
               height={300}
             />
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
