@@ -8,7 +8,10 @@ import Link from "next/link";
 
 const HeroSection = () => {
   return (
-    <section className="lg:py-16">
+    <section
+      className="lg:py-16 background-color  bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: `url(/images/design-desktop.jpeg)` }}
+    >
       <div
         className="
           grid 
@@ -68,13 +71,13 @@ const HeroSection = () => {
               repeat={Infinity}
             />
           </h1>
-          <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
+          <p className="text-[#fff] text-base sm:text-lg mb-6 lg:text-xl">
             lorem ipsun dolor sit amet consectetur adipisicing elit. Quisquan
             voluptable
           </p>
           <div>
             <Link
-              href="https://api.whatsapp.com/send?phone=3135897451&text=Motileme"
+              href="https://wa.me/573135897451?text=Motileme"
               className="
                 px-6 
                 py-3 
@@ -103,7 +106,6 @@ const HeroSection = () => {
           <div
             className="
                 rounded-full 
-                bg-[#181818] 
                 w-[250px] 
                 h-[250px] 
                 lg:w-[400px] 
